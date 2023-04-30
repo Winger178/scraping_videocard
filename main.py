@@ -9,12 +9,12 @@ headers = {
     'User-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36'
 }
 
-#req = requests.get(url, headers=headers)
-#output = req.text
+req = requests.get(url, headers=headers)
+output = req.text
 
 
-#with open('index.html', 'w', encoding='utf-8') as file:
-#    file.write(output)
+with open('index.html', 'w', encoding='utf-8') as file:
+    file.write(output)
 
 with open('index.html', 'r', encoding='utf-8') as file:
     src = file.read()
